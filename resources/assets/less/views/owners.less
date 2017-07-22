@@ -1,0 +1,110 @@
+body.owners {
+    section#contact {
+        background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)), url(/img/hero/puzzle.jpg);
+        display: table;
+        width: 100%;
+        min-height: 100vh;
+
+        .hero-wrapper {
+            display: table-cell;
+            padding-bottom: 18px;
+            padding-top: 18px;
+            vertical-align: middle;
+        }
+
+        strong {
+            color: @orange;
+        }
+
+        h1 {
+            font-size: 42px;
+            color: @white;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        h4 {
+            font-size: 21px;
+            font-weight: bold;
+            color: @light-grey;
+        }
+
+        hr {
+            border-color: @light-blue;
+            border-width: 2px;
+        }
+
+        p {
+            font-weight: bold;
+            font-size: 16px;
+            color: @off-white;
+        }
+    }
+
+    #features {
+        .row > div {
+            height: 254px;
+        }
+    }
+
+    #features {
+    }
+
+    #cost {
+        .table > .table-cell {
+            padding-left: 30px;
+            padding-right: 30px;
+            vertical-align: middle;
+        }
+
+        img {
+            max-width: 320px;
+        }
+
+        p {
+            text-align: center;
+        }
+    }
+
+    section#end-hero {
+        color: @white;
+        text-align: center;
+        background: url(/img/hero/street.jpg);
+        padding-top: 60px;
+        padding-bottom: 82px;
+        margin-top: 0;
+
+        a {
+            margin: 1.62em 0;
+        }
+    }
+
+    @media (min-width: @screen-md-min) {
+        .hero-content {
+            display: table;
+            width: 100%;
+
+            & > div {
+                display: table-cell;
+                vertical-align: middle;
+
+                &:nth-child(1) {
+                    width: 62%;
+                    padding-right: 1em;
+                }
+
+                &:nth-child(2) {
+                    width: 38%;
+                }
+            }
+        }
+    }
+
+    @media (min-width: @screen-md-min) {
+        .hero {
+            .row > div {
+                text-align: left;
+            }
+        }
+    }
+}

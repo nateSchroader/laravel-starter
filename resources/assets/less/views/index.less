@@ -1,0 +1,97 @@
+body.home {
+    section#signup {
+        background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3)), url(/img/hero/jumping.jpg);
+        display: table;
+        width: 100%;
+        min-height: 100vh;
+
+        .hero-wrapper {
+            display: table-cell;
+            padding-bottom: 18px;
+            padding-top: 18px;
+            vertical-align: middle;
+        }
+
+        strong {
+            color: @orange;
+        }
+
+        h1 {
+            font-size: 42px;
+            color: @white;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        h4 {
+            font-size: 21px;
+            font-weight: bold;
+            color: @light-grey;
+        }
+
+        hr {
+            border-color: @light-blue;
+            border-width: 2px;
+        }
+
+        p {
+            font-weight: bold;
+            font-size: 16px;
+            color: @off-white;
+        }
+    }
+
+    section#features {
+        .row > div {
+            height: 222px;
+        }
+    }
+
+    section#end-hero {
+        display: table;
+        width: 100%;
+        color: @white;
+        text-align: center;
+        background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3)), url(/img/hero/hands.jpg);
+        min-height: 420px;
+        margin-top: 0;
+
+        .hero-wrapper {
+            display: table-cell;
+            vertical-align: middle;
+        }
+
+        a {
+            margin: 1.62em 0;
+        }
+    }
+
+    @media (min-width: @screen-md-min) {
+        .hero-content {
+            display: table;
+            width: 100%;
+
+            & > div {
+                display: table-cell;
+                vertical-align: middle;
+
+                &:nth-child(1) {
+                    width: 62%;
+                    padding-right: 1em;
+                }
+
+                &:nth-child(2) {
+                    width: 38%;
+                }
+            }
+        }
+    }
+
+    @media (min-width: @screen-md-min) {
+        .hero {
+            .row > div {
+                text-align: left;
+            }
+        }
+    }
+}

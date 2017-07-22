@@ -1,0 +1,75 @@
+@import 'bootstrap';
+@import 'varibles';
+@import 'general-styles';
+
+// Components
+
+// Views
+@import 'views/application.less';
+@import 'views/environment.less';
+@import 'views/index.less';
+@import 'views/privacy-policy.less';
+@import 'views/terms-of-use.less';
+
+html, body {
+    background-color: @white;
+    -webkit-font-smoothing: antialiased;
+    color: @dark-grey;
+    font-family: 'Open Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 400;
+    line-height: 24px;
+    font-style: normal;
+    letter-spacing: 0.5px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: 1.38em;
+    font-weight: 400;
+}
+
+p {
+    margin: 0 0 1.32em;
+}
+
+a {
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+header {
+    border-bottom: solid @light-blue 2px;
+    margin-bottom: 2em;
+    position: relative;
+    padding: 0.38em 42px 0.38em 0.38em;
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+
+    h1, h2, h3, h4, h5 {
+        display: inline;
+        letter-spacing: 0.3px;
+    }
+
+    h1:first-child, h2:first-child, h3:first-child, h4:first-child, h5:first-child {
+        font-weight: bolder;
+    }
+
+    h1:last-child, h2:last-child, h3:last-child, h4:last-child, h5:last-child {
+        font-weight: normal;
+        color: @med-grey;
+    }
+
+    h1:only-child, h2:only-child, h3:only-child, h4:only-child, h5:only-child {
+        font-weight: bolder;
+        color: @dark-grey;
+    }
+
+    .label {
+        bottom: 2px;
+        font-size: 12px;
+        position: relative;
+        padding: .2em .6em;
+    }
+}
